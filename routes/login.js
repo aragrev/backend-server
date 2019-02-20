@@ -43,6 +43,7 @@ app.post('/', (req, res) => {
             ok: true,
             message: 'Datos correctos',
             data: {
+                usuarioFull: usuarioBD,
                 id: usuarioBD._id,
                 nombre: usuarioBD.nombre,
                 email: usuarioBD.email,
