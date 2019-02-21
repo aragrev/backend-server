@@ -14,7 +14,7 @@ app.get('/:tipo/:img', (req, res, nex) => {
 
     // Verificar que la imagen existe en el directorio
     if (fs.existsSync(pathImagen)) {
-        res.sendFile(pathImagen); // en des uso "sendfile"
+        res.sendFile(pathImagen); // en desuso "sendfile"
     } else {
         var pathNoImagen = path.resolve(__dirname, '../assets/no-img.jpg');
         res.sendFile(pathNoImagen);
